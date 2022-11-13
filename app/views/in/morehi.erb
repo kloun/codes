@@ -1,0 +1,6 @@
+<h1>Другие случайные числа</h1>
+<ol>
+  <% @morenumbers.each do |ln| %>
+    <li> Число <%= ln.number.to_s + ' угадано ' + ln.created_at.to_s %> </li>
+  <% end %>
+</ol>
